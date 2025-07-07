@@ -1,0 +1,20 @@
+- id: read_more
+  translation: Leggi di più
+
+- id: send
+  translation: Invia messaggio
+
+- id: tags
+  translation: Tag
+
+- id: fname
+  translation: Nome
+
+- id: lname
+  translation: Cognome
+
+- id: email
+  translation: Indirizzo email
+
+- id: message
+  translation: Messaggio
