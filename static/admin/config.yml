@@ -1,8 +1,9 @@
 backend:
   name: auth0
-  domain: "dev-5w4hrn4vfetgy6pq.us.auth0.com"    # AUTH0_DOMAIN senza https://
-  client_id: "TsPqh85zmMOUCsRREY63sT8nTApvIkeY"   # AUTH0_CLIENT_ID
-  app_url: "https://electrafrigo.netlify.app/admin"  # URL admin del tuo sito
+  domain: "{{ getenv `AUTH0_DOMAIN` }}"
+  client_id: "{{ getenv `AUTH0_CLIENT_ID` }}"
+  app_url: "https://electrafrigo.netlify.app/admin"
+
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
