@@ -100,25 +100,28 @@ rel = "manifest"
 ######################### site variables ##############################
 # customize your color and font from here.
 [params.variables]
-color_primary = "#0AA8A7"
-color_secondary = "#376f92"
-body_color = "#fff"
-text_color = "#777"
-text_dark = "#222"
-text_light = "#959595"
-border_color = "#ECECEC"
-dark_body_color = "#1E262C"
-dark_text_color = "#cbcbcb"
-dark_text_light = "#959595"
-dark_text_dark = "#fff"
-dark_border_color = "#4e4e4e"
-black = "#101418"
-white = "#fff"
-light = "#EDF6F5"
-dark = "#1b2229"
+color_primary = "#03358E"          # blu intenso (nuovo primario)
+color_secondary = "#055AA3"        # blu più chiaro, complementare per secondario
+body_color = "#FFFFFF"             # bianco puro per sfondo chiaro
+text_color = "#555555"             # grigio scuro più leggibile rispetto a #777
+text_dark = "#111111"              # quasi nero per testi importanti
+text_light = "#888888"             # grigio medio per testi secondari
+border_color = "#DDE6F0"           # bordo chiaro con tonalità azzurra delicata
+
+dark_body_color = "#121B28"        # blu notte molto scuro (dark mode)
+dark_text_color = "#D0D8E8"        # azzurro chiaro per testo dark mode
+dark_text_light = "#7A8BAE"        # grigio azzurro tenue per testo secondario dark
+dark_text_dark = "#FFFFFF"         # bianco puro per testi importanti dark
+dark_border_color = "#2A3B55"      # bordo scuro/blu notte per dark mode
+
+black = "#101418"                  # nero profondo rimane
+white = "#FFFFFF"                  # bianco puro
+light = "#E6F0FA"                  # azzurro molto chiaro, sfondo alternativo chiaro
+dark = "#1B2229"                   # grigio scuro/blu scuro, sfondo alternativo scuro
+
 
 # font variables
-# base font size for full website, 
+# base font size for full website,
 font_size = "16px" # default is 16px
 
 # Font Scale Sizes
