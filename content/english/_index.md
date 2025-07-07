@@ -2,7 +2,7 @@
 ####################### Banner #########################
 banner:
   title : "Let us solve your critical website <br> development challenges"
-  image : "images/banner-art.svg"
+  image : "images/hero.jpg"
   content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus"
   button:
     enable : true

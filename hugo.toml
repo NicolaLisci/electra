@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com/bigspring/site/"
+baseURL = "https://electrafrigo.netlify.app/"
 title = "Electra"
 theme = "bigspring-light"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -8,6 +8,8 @@ timeZone = "Europe/Rome"
 pagination.pagerSize = 3
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
+
+defaultContentLanguage = "it"
 # disable language
 disableLanguages = ["de"] # example: ["de"] for disable deutsch language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = true # If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content.
