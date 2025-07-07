@@ -1,16 +1,15 @@
 ######################## default configuration ####################
 baseURL = "https://demo.gethugothemes.com/bigspring/site/"
-title = "Bigspring Light"
+title = "Electra"
 theme = "bigspring-light"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-timeZone = "America/New_York"
+timeZone = "Europe/Rome"
 # post pagination
 pagination.pagerSize = 3
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # disable language
-disableLanguages = [
-] # example: ["de"] for disable deutsch language. see https://gohugo.io/content-management/multilingual/
+disableLanguages = ["de"] # example: ["de"] for disable deutsch language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = true # If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content.
 
 ########################### Services #############################
