@@ -1,33 +1,14 @@
 {{ define "main" }}
 
 <!-- banner -->
-<section class="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
+{{ range where .Pages "Type" "volantini" }}
+  <h2>{{ .Title }}</h2>
+  <p>{{ .Date.Format "02/01/2006" }}</p>
+  <a href="{{ .Params.file }}">Scarica il volantino</a>
+{{ end }}
 
-        {{/* Recupera tutti i contenuti della sezione "volantini" ordinati per data decrescente */}}
-        {{ $volantini := where .Site.Pages "Section" "volantini" | sort "Params.date" "desc" }}
 
-        {{/* Prendi il primo volantino più recente */}}
-        {{ with index $volantini 0 }}
-          <h1 class="mb-3">{{ .Params.title }}</h1>
-          <p class="mb-4">{{ .Params.description }}</p>
 
-          {{ if .Params.pdf }}
-            <a href="{{ .Params.pdf | relURL }}" target="_blank" rel="noopener" class="btn btn-primary mb-4">
-              Scarica il volantino
-            </a>
-          {{ end }}
-        {{ else }}
-          <h1 class="mb-3">Benvenuti nel nostro sito</h1>
-          <p class="mb-4">Non ci sono volantini disponibili al momento.</p>
-        {{ end }}
-
-      </div>
-    </div>
-  </div>
-</section>
 <!-- /banner -->
 
 <!-- feature -->
