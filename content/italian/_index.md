@@ -1,9 +1,9 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "Lascia che risolviamo le tue sfide critiche <br> nello sviluppo del sito web"
+  title : "Lasciaci risolvere le tue sfide critiche nello sviluppo del sito web"
   image : "images/hero.jpg"
-  content : "Siamo esperti nello sviluppo di siti web performanti e funzionali, pronti a supportarti in ogni fase del progetto."
+  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus"
   button:
     enable : true
     label : "Contattaci"
@@ -14,28 +14,90 @@ feature:
   enable : true
   title : "I nostri servizi"
   feature_item:
-  - name: "Consegne a domicilio"
+  - name: "Consegna a domicilio"
     icon: "fas fa-truck"
-    content: "Consegniamo direttamente a casa tua, a piano o al piano strada, con puntualità e attenzione."
+    content: "Consegniamo direttamente a casa tua, sia al marciapiede che al piano, con cura e puntualità."
 
   - name: "Installazione"
     icon: "fas fa-wrench"
-    content: "Ci occupiamo dell’installazione completa dei prodotti, per un servizio senza pensieri."
+    content: "Ci occupiamo dell'installazione completa del prodotto, per un'esperienza senza problemi."
 
   - name: "Finanziamenti"
     icon: "fas fa-coins"
-    content: "Soluzioni di pagamento personalizzate e rateizzabili, pensate su misura per te."
+    content: "Piani di pagamento personalizzati e flessibili studiati per le tue esigenze."
 
   - name: "Preventivi"
     icon: "fas fa-file-invoice-dollar"
-    content: "Preventivi chiari e personalizzati, basati sulle tue reali esigenze."
+    content: "Preventivi chiari e personalizzati basati sulle tue specifiche richieste."
 
-  - name: "Consulenza tecnica"
+  - name: "Supporto tecnico"
     icon: "fas fa-toolbox"
-    content: "Supporto tecnico veloce e competente, sempre a disposizione per dubbi o aggiornamenti."
+    content: "Assistenza tecnica rapida e affidabile, sempre pronta a rispondere a domande o fornire aggiornamenti."
 
-  - name: "Liste nozze"
+  - name: "Lista nozze"
     icon: "fas fa-heart"
-    content: "Crea la tua lista nozze personalizzata, con assistenza dedicata e ampia scelta di articoli."
+    content: "Crea la tua lista nozze personalizzata con consulenza esperta e un’ampia gamma di articoli."
 
+######################### Service #####################
+service:
+  enable : true
+  service_item:
+    # service item loop
+    - title : "È la più avanzata azienda di marketing digitale e IT."
+      images:
+      - "images/service-1.png"
+      - "images/service-2.png"
+      - "images/service-3.png"
+      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      button:
+        enable : true
+        label : "Scoprilo"
+        link : "#"
+        
+    # service item loop
+    - title : "È una società privata di informatica e sicurezza informatica"
+      images:
+      - "images/service-1.png"
+      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      button:
+        enable : true
+        label : "Scoprilo"
+        link : "#"
+        
+    # service item loop
+    - title : "È un team di persone esperte e competenti con distribuzioni"
+      images:
+      - "images/service-2.png"
+      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      button:
+        enable : true
+        label : "Scoprilo"
+        link : "#"
+        
+    # service item loop
+    - title : "Un’azienda che si distingue dalle altre"
+      images:
+      - "images/service-3.png"
+      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      button:
+        enable : true
+        label : "Scoprilo"
+        link : "#"
+        
+################### Screenshot ########################
+screenshot:
+  enable : true
+  title : "Vivi il miglior <br> flusso di lavoro con noi"
+  image : "images/screenshot.svg"
+
+##################### Call to action #####################
+call_to_action:
+  enable : true
+  title : "Pronto per iniziare?"
+  image : "images/cta.svg"
+  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur."
+  button:
+    enable : true
+    label : "Contattaci"
+    link : "contact/"
 ---

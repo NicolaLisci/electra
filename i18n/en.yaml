@@ -12,10 +12,12 @@
 
 - id: lname
   translation: Last Name
-  
+
 - id: email
   translation: Email Address
 
 - id: message
   translation: Message
 
+- id: where_are_we
+  translation: Where to find us
