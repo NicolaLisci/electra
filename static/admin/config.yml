@@ -20,7 +20,7 @@ collections:
 
   - name: "volantini"
     label: "Volantini"
-    folder: "content/volantini"
+    folder: "content/italian/volantini"
     create: true
     slug: "{{year}}-{{month}}"
     fields:
