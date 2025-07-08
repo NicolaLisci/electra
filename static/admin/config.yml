@@ -17,3 +17,13 @@ collections:
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Immagine in evidenza", name: "image", widget: "image" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "volantini"
+    label: "Volantini"
+    folder: "content/volantini"
+    create: true
+    slug: "{{year}}-{{month}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Volantino (PDF)", name: "file", widget: "file", media_library: { allow_multiple: false }, media_folder: "/static/volantini", public_folder: "/volantini" }
