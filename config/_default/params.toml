@@ -14,7 +14,7 @@ logo_text = "Electra"
 theme_switcher = true
 theme_default = "system" # available options [light/dark/system]
 # Main Sections
-mainSections = ["blog","volantini"]
+mainSections = ["blog"]
 # contact form action
 contact_form_action = "#!" # contact form works with [https://airform.io/] or [https://formspree.io]
 # demo form action

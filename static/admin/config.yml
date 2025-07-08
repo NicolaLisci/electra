@@ -18,38 +18,5 @@ collections:
       - { label: "Immagine in evidenza", name: "image", widget: "image" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
 
-  - name: "volantini"
-    label: "Volantini"
-    folder: "content/italian/volantini"
-    create: true
-    slug: "{{year}}-{{month}}"
-    fields:
-      - label: "Titolo"
-        name: "title"
-        widget: "string"
-      - label: "Data"
-        name: "date"
-        widget: "datetime"
-      - label: "Volantino (PDF)"
-        name: "file"
-        widget: "file"
-        media_folder: "static/volantini"
-        public_folder: "/volantini"
-        allow_multiple: false
-      - label: "Immagini del volantino"
-        name: "images"
-        widget: "list"
-        allow_add: true
-        fields:
-          - label: "Immagine"
-            name: "image"
-            widget: "image"
-            media_folder: "static/volantini"
-            public_folder: "/volantini"
-      - label: "Bozza"
-        name: "draft"
-        widget: "boolean"
-        default: false
-
 
 
