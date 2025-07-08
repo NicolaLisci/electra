@@ -14,21 +14,28 @@ feature:
   enable : true
   title : "Caratteristiche principali"
   feature_item:
-    - name : "Codice Pulito"
-      icon : "fas fa-code"
-      content : "Sviluppiamo codice chiaro e mantenibile per garantire qualità e affidabilità."
-    - name : "Orientato agli Oggetti"
-      icon : "fas fa-object-group"
-      content : "Progettiamo software modulare e scalabile con i migliori principi di programmazione."
-    - name : "Assistenza 24h"
-      icon : "fas fa-user-clock"
-      content : "Supporto continuo per risolvere qualsiasi problema in tempi rapidi."
-    - name : "Ottimo Rapporto Qualità-Prezzo"
-      icon : "fas fa-heart"
-      content : "Soluzioni efficienti e personalizzate che rispettano il tuo budget."
-    - name : "Risposta Veloce"
-      icon : "fas fa-tachometer-alt"
-      content : "Tempi di risposta rapidi per ogni richiesta o aggiornamento."
-    - name : "Supporto Cloud"
-      icon : "fas fa-cloud"
+  - name: "Consegne a domicilio"
+    icon: "fas fa-truck"
+    content: "Consegniamo direttamente a casa tua, a piano o al piano strada, con puntualità e attenzione."
+
+  - name: "Installazione"
+    icon: "fas fa-wrench"
+    content: "Ci occupiamo dell’installazione completa dei prodotti, per un servizio senza pensieri."
+
+  - name: "Finanziamenti"
+    icon: "fas fa-coins"
+    content: "Soluzioni di pagamento personalizzate e rateizzabili, pensate su misura per te."
+
+  - name: "Preventivi"
+    icon: "fas fa-file-invoice-dollar"
+    content: "Preventivi chiari e personalizzati, basati sulle tue reali esigenze."
+
+  - name: "Consulenza tecnica"
+    icon: "fas fa-toolbox"
+    content: "Supporto tecnico veloce e competente, sempre a disposizione per dubbi o aggiornamenti."
+
+  - name: "Liste nozze"
+    icon: "fas fa-heart"
+    content: "Crea la tua lista nozze personalizzata, con assistenza dedicata e ampia scelta di articoli."
+
 ---

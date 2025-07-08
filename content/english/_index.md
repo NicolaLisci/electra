@@ -14,35 +14,30 @@ feature:
   enable : true
   title : "Something You Need To Know"
   feature_item:
-    # feature item loop
-    - name : "Clean Code"
-      icon : "fas fa-code"
-      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-      
-    # feature item loop
-    - name : "Object Oriented"
-      icon : "fas fa-object-group"
-      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-      
-    # feature item loop
-    - name : "24h Service"
-      icon : "fas fa-user-clock"
-      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-      
-    # feature item loop
-    - name : "Value For Money"
-      icon : "fas fa-heart"
-      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-      
-    # feature item loop
-    - name : "Faster Response"
-      icon : "fas fa-tachometer-alt"
-      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-      
-    # feature item loop
-    - name : "Cloud Support"
-      icon : "fas fa-cloud"
-      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "Home Delivery"
+    icon: "fas fa-truck"
+    content: "We deliver straight to your home, either curbside or upstairs, with care and punctuality."
+
+  - name: "Installation"
+    icon: "fas fa-wrench"
+    content: "We take care of complete product installation, for a hassle-free experience."
+
+  - name: "Financing"
+    icon: "fas fa-coins"
+    content: "Tailored and flexible payment plans designed to fit your needs."
+
+  - name: "Estimates"
+    icon: "fas fa-file-invoice-dollar"
+    content: "Clear and personalized estimates based on your specific requirements."
+
+  - name: "Technical Support"
+    icon: "fas fa-toolbox"
+    content: "Fast and reliable technical assistance, always ready to answer questions or provide updates."
+
+  - name: "Wedding Registry"
+    icon: "fas fa-heart"
+    content: "Create your personalized wedding registry with expert guidance and a wide range of items."
+
 
 
 
