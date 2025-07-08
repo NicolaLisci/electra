@@ -24,6 +24,16 @@ collections:
     create: true
     slug: "{{year}}-{{month}}"
     fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Volantino (PDF)", name: "file", widget: "file", media_library: { allow_multiple: false }, media_folder: "/static/volantini", public_folder: "/volantini" }
+    - label: "Titolo"
+      name: "title"
+      widget: "string"
+    - label: "Data"
+      name: "date"
+      widget: "datetime"
+    - label: "Volantino (PDF)"
+      name: "file"
+      widget: "file"
+      media_folder: "static/volantini"
+      public_folder: "/volantini"
+      allow_multiple: false
+
