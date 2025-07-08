@@ -33,12 +33,23 @@ collections:
       - label: "Volantino (PDF)"
         name: "file"
         widget: "file"
-        media_folder: "/static/volantini"
+        media_folder: "static/volantini"
         public_folder: "/volantini"
         allow_multiple: false
+      - label: "Immagini del volantino"
+        name: "images"
+        widget: "list"
+        allow_add: true
+        fields:
+          - label: "Immagine"
+            name: "image"
+            widget: "image"
+            media_folder: "static/volantini"
+            public_folder: "/volantini"
       - label: "Bozza"
         name: "draft"
         widget: "boolean"
         default: false
+
 
 

@@ -1,12 +1,58 @@
 {{ define "main" }}
 
 <!-- banner -->
-{{ range where .Pages "Type" "volantini" }}
-  <h2>{{ .Title }}</h2>
-  <p>{{ .Date.Format "02/01/2006" }}</p>
-  <a href="{{ .Params.file }}">Scarica il volantino</a>
-{{ end }}
+{{ $volantini := where .Site.RegularPages "Type" "volantini" }}
+{{ $sorted := sort $volantini ".Date" "desc" }}
 
+{{ if gt (len $sorted) 0 }}
+<section id="carosello-volantini" style="max-width: 800px; margin: 2rem auto; position: relative; overflow: hidden; border-radius: 10px; border: 1px solid #ccc;">
+  <div style="white-space: nowrap; transition: transform 0.5s ease;" id="slides-container">
+    {{ range $sorted }}
+      <div style="display: inline-block; width: 100%; text-align: center;">
+        <a href="{{ .Params.file }}" target="_blank" style="text-decoration: none; color: inherit;">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 100%; height: auto; border-bottom: 1px solid #ddd;">
+          <h3 style="margin: 0.5rem 0;">{{ .Title }}</h3>
+          <p style="margin: 0; color: #666;">Pubblicato il {{ .Date.Format "02/01/2006" }}</p>
+        </a>
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- Bottoni navigazione -->
+  <button id="prev-slide" aria-label="Slide precedente" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.4); border:none; color:white; font-size: 2rem; cursor: pointer; border-radius: 50%; width: 40px; height: 40px;">‹</button>
+  <button id="next-slide" aria-label="Slide successivo" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.4); border:none; color:white; font-size: 2rem; cursor: pointer; border-radius: 50%; width: 40px; height: 40px;">›</button>
+</section>
+
+<script>
+  (function() {
+    const container = document.getElementById('slides-container');
+    const slidesCount = container.children.length;
+    let currentIndex = 0;
+
+    function updateSlide() {
+      container.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    document.getElementById('prev-slide').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slidesCount) % slidesCount;
+      updateSlide();
+    });
+
+    document.getElementById('next-slide').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slidesCount;
+      updateSlide();
+    });
+
+    // Optional: auto slide ogni 5 secondi
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slidesCount;
+      updateSlide();
+    }, 5000);
+  })();
+</script>
+{{ else }}
+<p style="text-align:center; font-style: italic; color:#777;">Nessun volantino disponibile.</p>
+{{ end }}
 
 
 <!-- /banner -->
