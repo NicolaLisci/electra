@@ -12,7 +12,7 @@ banner:
 ##################### Feature ##########################
 feature:
   enable : true
-  title : "Caratteristiche principali"
+  title : "I nostri servizi"
   feature_item:
   - name: "Consegne a domicilio"
     icon: "fas fa-truck"

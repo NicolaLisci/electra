@@ -1,5 +1,15 @@
 <footer class="bg-light section pb-0">
   <div class="container">
+    <div class="col-12 mb-4">
+      <h5 class="mb-3 text-center">Dove ci trovi</h5>
+      <div class="map-responsive">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.911586850904!2d8.659040376158314!3d39.493910971602894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e76537aee4e051%3A0x6b9d5f217e7df160!2sElectra%20Frigo!5e0!3m2!1sit!2sit!4v1752001014563!5m2!1sit!2sit"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
     <div class="row justify-content-center">
       <div class="col-xl-11">
         <div class="section pt-0">
@@ -14,6 +24,7 @@
               </ul>
               {{ end }}
             </div>
+
             <div class="col-lg-3 col-sm-6">
               {{ if site.Menus.footer_middle }}
               <div class="h5 mb-4">{{ site.Params.footer_menu_middle }}</div>
@@ -24,6 +35,7 @@
               </ul>
               {{ end }}
             </div>
+
             <div class="col-lg-3 col-sm-6">
               {{ if site.Menus.footer_right }}
               <div class="h5 mb-4">{{ site.Params.footer_menu_right }}</div>
@@ -34,6 +46,7 @@
               </ul>
               {{ end }}
             </div>
+
             <div class="col-lg-3 col-sm-6">
               <a class="d-block h5 mb-3" href="{{ site.BaseURL | absLangURL}}">
                 {{ partial "logo.html" }}
@@ -42,21 +55,26 @@
               {{ with site.Params.social }}
               <ul class="list-inline social-icons">
                 {{ range . }}
-                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i
-                      class="{{ .icon }}"></i></a></li>
+                <li class="list-inline-item">
+                  <a href="{{ .link | safeURL }}" title="{{ .title }}">
+                    <i class="{{ .icon }}"></i>
+                  </a>
+                </li>
                 {{ end }}
               </ul>
               {{ end }}
             </div>
           </div>
-        </div>
-        {{ if site.Params.theme_copyright }}
-        <div class="border-top border-default text-center py-4">
-          <small class="content"> {{site.Params.copyright}} | Theme by <a target="_blank" rel="noopener noreferrer" href="https://gethugothemes.com/">GetHugoThemes</a>
-          </small>
-        </div>
-        {{ end }}
 
+          {{ if site.Params.theme_copyright }}
+          <div class="border-top border-default text-center py-4">
+            <small class="content">
+              {{site.Params.copyright}} | Theme by
+              <a target="_blank" rel="noopener noreferrer" href="https://gethugothemes.com/">GetHugoThemes</a>
+            </small>
+          </div>
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>

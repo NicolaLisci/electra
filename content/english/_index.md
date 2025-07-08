@@ -12,7 +12,7 @@ banner:
 ##################### Feature ##########################
 feature:
   enable : true
-  title : "Something You Need To Know"
+  title : "Our services"
   feature_item:
   - name: "Home Delivery"
     icon: "fas fa-truck"
