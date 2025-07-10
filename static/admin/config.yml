@@ -18,5 +18,18 @@ collections:
       - { label: "Immagine in evidenza", name: "image", widget: "image" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
 
+  - name: "volantini"
+    label: "Volantini"
+    folder: "static/volantini"
+    create: true
+    extension: "pdf"
+    media_folder: "static/volantini"
+    public_folder: "/volantini"
+    fields:
+      - { label: "File PDF", name: "file", widget: "file" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+
+
 
 

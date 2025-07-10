@@ -100,4 +100,16 @@ call_to_action:
     enable : true
     label : "Contattaci"
     link : "contact/"
+
+banner:
+  title: "Offerte di Luglio 2025"
+  content: "Sfoglia le offerte del mese direttamente dal sito!"
+  image: "images/hero-blue.png"
+  button:
+    enable: true
+    label: "Scarica il volantino"
+    link: "/volantini/pages.pdf"
+  pdf: "/volantini/pages.pdf"
+
+
 ---

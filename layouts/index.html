@@ -1,31 +1,9 @@
 {{ define "main" }}
 
 <!-- banner -->
-{{ with .Params.banner }}
-  {{ $banner := . }}
-<section
-  class="banner text-center text-white d-flex align-items-center"
-  style="background-image: url('{{ $banner.image | relURL }}'); background-size: cover; background-position: center; min-height: 400px; position: relative;">
-
-  <div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></div>
-
-  <div class="container" style="position: relative; z-index: 2;">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <h1 class="mb-3">{{ $banner.title | markdownify }}</h1>
-        <p class="mb-4">{{ $banner.content | markdownify }}</p>
-        {{ if $banner.button.enable }}
-          {{ with $banner.button }}
-            <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-
+{{ partial "banner.html" . }}
 <!-- /banner -->
+
 
 <!-- feature -->
 {{ with .Params.feature }}

@@ -3,54 +3,55 @@
 
 <head>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  
+  <!-- head (don't cache it) -->
+  {{ partial "head.html" . }}
 
-	<!-- head (don't cache it) -->
-	{{ partial "head.html" . }}
-
-	<!-- cache partial only in production -->
-	{{ if hugo.IsProduction }}
-	{{ partialCached "style.html" . }}
-	{{ else }}
-	{{ partial "style.html" . }}
-	{{ end }}
+  <!-- cache partial only in production -->
+  {{ if hugo.IsProduction }}
+  {{ partialCached "style.html" . }}
+  {{ else }}
+  {{ partial "style.html" . }}
+  {{ end }}
 </head>
 
 <body>
-	<!-- cache partial only in production -->
-	{{ if hugo.IsProduction }}
-	{{ partialCached "preloader.html" . }}
-	{{ partialCached "gtm-noscript.html" . }}
-	{{ else }}
-	{{ partial "preloader.html" . }}
-	{{ end }}
+  <!-- cache partial only in production -->
+  {{ if hugo.IsProduction }}
+  {{ partialCached "preloader.html" . }}
+  {{ partialCached "gtm-noscript.html" . }}
+  {{ else }}
+  {{ partial "preloader.html" . }}
+  {{ end }}
 
-	<!-- header (don't cache it) -->
-	{{ partial "header.html" . }}
+  <!-- header (don't cache it) -->
+  {{ partial "header.html" . }}
 
-	<main>
-		{{ block "main" . }}{{ end }}
-	</main>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
 
-	<!-- cache partial only in production -->
-	{{ if hugo.IsProduction }}
-	{{ partialCached "footer.html" . }}
-	{{ partialCached "script.html" . }}
-	{{ else }}
-	{{ partial "footer.html" . }}
-	{{ partial "script.html" . }}
-	{{ end }}
+  <!-- cache partial only in production -->
+  {{ if hugo.IsProduction }}
+  {{ partialCached "footer.html" . }}
+  {{ partialCached "script.html" . }}
+  {{ else }}
+  {{ partial "footer.html" . }}
+  {{ partial "script.html" . }}
+  {{ end }}
 
   <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
 </body>
 
