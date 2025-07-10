@@ -9,8 +9,8 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   <div class="container" style="position: relative; z-index: 2;">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <h1 class="mb-3 text-dark">{{ $banner.title | markdownify }}</h1>
-        <h4 class="mb-4 text-dark">{{ $banner.content | markdownify }}</h4>
+        <h1 class="mb-3 text-light">{{ $banner.title | markdownify }}</h1>
+        <h4 class="mb-4 text-light">{{ $banner.content | markdownify }}</h4>
         {{ if $banner.button.enable }}
           {{ with $banner.button }}
             <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>

@@ -102,8 +102,8 @@ call_to_action:
     link : "contact/"
 
 banner:
-  title: "Ultime offerte"
-  content: "Sfoglia le offerte del mese direttamente dal sito!"
+  title: "Il meglio per la tua casa, ogni mese"
+  content: "Scopri le migliori offerte su elettrodomestici e casalighi"
   image: "images/hero-blue.png"
   button:
     enable: true
