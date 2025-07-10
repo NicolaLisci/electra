@@ -22,7 +22,7 @@ collections:
     label: "Volantini"
     folder: "content/volantini"
     create: true
-    format: "yaml"        # o "md"
+    format: "yaml"
     extension: "yaml"
     slug: "{{slug}}"
     fields:
