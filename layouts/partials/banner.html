@@ -9,8 +9,8 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   <div class="container" style="position: relative; z-index: 2;">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <h1 class="mb-3 text-light">{{ $banner.title | markdownify }}</h1>
-        <h4 class="mb-4 text-light">{{ $banner.content | markdownify }}</h4>
+        <h1 class="mb-3 text-dark">{{ $banner.title | markdownify }}</h1>
+        <h4 class="mb-4 text-dark">{{ $banner.content | markdownify }}</h4>
         {{ if $banner.button.enable }}
           {{ with $banner.button }}
             <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
@@ -54,6 +54,9 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   const pageCountElem = document.getElementById('page-count');
   const prevBtn = document.getElementById('prev-page');
   const nextBtn = document.getElementById('next-page');
+
+  let touchStartX = 0;
+  let touchEndX = 0;
 
   function updateButtons() {
     prevBtn.disabled = (pageNum <= 1);
@@ -106,6 +109,28 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
     queueRenderPage(pageNum);
   }
 
+  function handleSwipeGesture() {
+    const swipeThreshold = 50;
+    const dx = touchEndX - touchStartX;
+
+    if (Math.abs(dx) > swipeThreshold) {
+      if (dx < 0) {
+        onNextPage();
+      } else {
+        onPrevPage();
+      }
+    }
+  }
+
+  canvas.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+
+  canvas.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipeGesture();
+  }, false);
+
   getDocument(url).promise.then(pdfDoc_ => {
     pdfDoc = pdfDoc_;
     pageCountElem.textContent = pdfDoc.numPages;
@@ -124,6 +149,7 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   prevBtn.addEventListener('click', onPrevPage);
   nextBtn.addEventListener('click', onNextPage);
 </script>
+
 
 
 {{ end }}
