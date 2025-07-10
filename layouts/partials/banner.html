@@ -26,10 +26,10 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 text-center">
       <canvas id="pdf-canvas" style="border: 1px solid #ccc; max-width: 100%;"></canvas>
-      <div class="mt-3 text-center">
-        <button id="prev-page" class="btn btn-primary me-2" aria-label="Pagina precedente">Indietro</button>
-        <span id="page-num">1</span> / <span id="page-count">?</span>
-        <button id="next-page" class="btn btn-primary ms-2" aria-label="Pagina successiva">Avanti</button>
+      <div class="mt-3 d-flex justify-content-center align-items-center gap-3">
+        <button id="prev-page" class="btn btn-primary" aria-label="Pagina precedente" disabled>Indietro</button>
+        <span>Pagina <span id="page-num">1</span> di <span id="page-count">?</span></span>
+        <button id="next-page" class="btn btn-primary" aria-label="Pagina successiva" disabled>Avanti</button>
       </div>
     </div>
   </div>
@@ -47,6 +47,16 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   pageNumPending = null,
   scale = 1.5;
 
+  const pageNumElem = document.getElementById('page-num');
+  const pageCountElem = document.getElementById('page-count');
+  const prevBtn = document.getElementById('prev-page');
+  const nextBtn = document.getElementById('next-page');
+
+  function updateButtons() {
+    prevBtn.disabled = (pageNum <= 1);
+    nextBtn.disabled = (pageNum >= pdfDoc.numPages);
+  }
+
   function renderPage(num) {
     pageRendering = true;
     pdfDoc.getPage(num).then(page => {
@@ -58,6 +68,7 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
         canvasContext: ctx,
         viewport: viewport
       };
+
       const renderTask = page.render(renderContext);
 
       renderTask.promise.then(() => {
@@ -68,7 +79,8 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
         }
       });
 
-      document.getElementById('page-num').textContent = num;
+      pageNumElem.textContent = num;
+      updateButtons();
     });
   }
 
@@ -94,12 +106,21 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
 
   pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
     pdfDoc = pdfDoc_;
-    document.getElementById('page-count').textContent = pdfDoc.numPages;
+    pageCountElem.textContent = pdfDoc.numPages;
+    prevBtn.disabled = false;
+    nextBtn.disabled = false;
     renderPage(pageNum);
+  }).catch(err => {
+    console.error('Errore nel caricamento del PDF:', err);
+    canvas.style.display = 'none';
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'none';
+    pageNumElem.textContent = '0';
+    pageCountElem.textContent = '0';
   });
 
-  document.getElementById('prev-page').addEventListener('click', onPrevPage);
-  document.getElementById('next-page').addEventListener('click', onNextPage);
+  prevBtn.addEventListener('click', onPrevPage);
+  nextBtn.addEventListener('click', onNextPage);
 </script>
 {{ end }}
 {{ end }}

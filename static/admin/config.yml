@@ -20,15 +20,18 @@ collections:
 
   - name: "volantini"
     label: "Volantini"
-    folder: "static/volantini"
+    folder: "content/volantini"
     create: true
-    extension: "pdf"
-    media_folder: "static/volantini"
-    public_folder: "/volantini"
+    format: "yaml"        # o "md"
+    extension: "yaml"
+    slug: "{{slug}}"
     fields:
-      - { label: "File PDF", name: "file", widget: "file" }
       - { label: "Titolo", name: "title", widget: "string" }
+      - label: "PDF"
+        name: "pdf"
+        widget: "file"
       - { label: "Data", name: "date", widget: "datetime" }
+
 
 
 
