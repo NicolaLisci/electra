@@ -4,21 +4,21 @@
 class="banner text-center text-white d-flex align-items-center"
 style="background-image: url('{{ $banner.image | relURL }}'); background-size: cover; background-position: center; min-height: 400px; position: relative;">
 
-<div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></div>
 
-<div class="container" style="position: relative; z-index: 2;">
-  <div class="row">
-    <div class="col-lg-10 mx-auto">
-      <h1 class="mb-3 text-light">{{ $banner.title | markdownify }}</h1>
-      <h4 class="mb-4 text-light">{{ $banner.content | markdownify }}</h4>
-      {{ if $banner.button.enable }}
-      {{ with $banner.button }}
-      <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
-      {{ end }}
-      {{ end }}
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h1 class="mb-3 text-light">{{ $banner.title | markdownify }}</h1>
+        <h4 class="mb-4 text-light">{{ $banner.content | markdownify }}</h4>
+        {{ if $banner.button.enable }}
+          {{ with $banner.button }}
+            <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
+          {{ end }}
+        {{ end }}
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 {{ if $banner.pdf }}
@@ -35,17 +35,20 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script>
+<script type="module">
+  import { getDocument, GlobalWorkerOptions } from '{{ "js/pdf.mjs" | relURL }}';
+
+  GlobalWorkerOptions.workerSrc = '{{ "js/pdf.worker.mjs" | relURL }}';
+
   const url = '{{ $banner.pdf | relURL }}';
   const canvas = document.getElementById('pdf-canvas');
   const ctx = canvas.getContext('2d');
 
   let pdfDoc = null,
-  pageNum = 1,
-  pageRendering = false,
-  pageNumPending = null,
-  scale = 1.5;
+      pageNum = 1,
+      pageRendering = false,
+      pageNumPending = null,
+      scale = 1.5;
 
   const pageNumElem = document.getElementById('page-num');
   const pageCountElem = document.getElementById('page-count');
@@ -70,7 +73,6 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
       };
 
       const renderTask = page.render(renderContext);
-
       renderTask.promise.then(() => {
         pageRendering = false;
         if (pageNumPending !== null) {
@@ -104,7 +106,7 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
     queueRenderPage(pageNum);
   }
 
-  pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
+  getDocument(url).promise.then(pdfDoc_ => {
     pdfDoc = pdfDoc_;
     pageCountElem.textContent = pdfDoc.numPages;
     prevBtn.disabled = false;
@@ -122,5 +124,7 @@ style="background-image: url('{{ $banner.image | relURL }}'); background-size: c
   prevBtn.addEventListener('click', onPrevPage);
   nextBtn.addEventListener('click', onNextPage);
 </script>
+
+
 {{ end }}
 {{ end }}
