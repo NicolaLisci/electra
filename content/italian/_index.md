@@ -34,10 +34,6 @@ feature:
     icon: "fas fa-toolbox"
     content: "Assistenza tecnica rapida e affidabile, sempre pronta a rispondere a domande o fornire aggiornamenti."
 
-  - name: "Lista nozze"
-    icon: "fas fa-heart"
-    content: "Crea la tua lista nozze personalizzata con consulenza esperta e un’ampia gamma di articoli."
-
 ######################### Service #####################
 service:
   enable : true
