@@ -27,7 +27,7 @@ google_tag_manager = "" # example: G-XXXXXXXXXX
 custom_script = ""
 # copyright
 theme_copyright = true
-copyright = "Copyright by your company"
+copyright = "Copyright by Electra Frigo"
 
 # preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

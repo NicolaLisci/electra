@@ -8,7 +8,7 @@ weight = 1
 footer_menu_left = "Azienda"
 footer_menu_middle = "Prodotti"
 footer_menu_right = "Supporto"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit consjat tristique eget amet."
+footer_content = ""
 
 ################################### English language #####################################
 [en]
@@ -20,7 +20,7 @@ weight = 2
 footer_menu_left = "Company"
 footer_menu_middle = "Products"
 footer_menu_right = "Support"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit consjat tristique eget amet."
+footer_content = ""
 
 ################################### Deutsch language #####################################
 [de]
@@ -32,6 +32,6 @@ weight = 3
 footer_menu_left = "Firma"
 footer_menu_middle = "Produkte"
 footer_menu_right = "Support"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit consjat tristique eget amet."
+footer_content = ""
 
 
