@@ -39,46 +39,46 @@ service:
   enable : true
   service_item:
     # service item loop
-    - title : "È la più avanzata azienda di marketing digitale e IT."
+    - title : "Elettrodomestici per ogni esigenza"
       images:
-      - "images/service-1.png"
-      - "images/service-2.png"
-      - "images/service-3.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      - "images/elettrodomestici-1.webp"
+      - "images/elettrodomestici-2.webp"
+      - "images/elettrodomestici-3.webp"
+      content : "Dalle cucine alle lavatrici, dai frigoriferi ai piccoli elettrodomestici: selezioniamo solo i marchi più affidabili per offrirti prodotti di qualità, assistenza garantita e prezzi competitivi. Che tu stia arredando una nuova casa o sostituendo un vecchio apparecchio, ti aiutiamo a scegliere quello giusto per te."
       button:
         enable : true
         label : "Scoprilo"
         link : "#"
         
     # service item loop
-    - title : "È una società privata di informatica e sicurezza informatica"
+    - title : "Casalinghi pratici e di stile"
       images:
-      - "images/service-1.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      - "images/casalinghi-1.png"
+      content : "Pentole, utensili, accessori per la cucina e la tavola: tutto quello che serve per rendere la tua casa accogliente e funzionale. Un'ampia selezione di articoli scelti con cura, per unire qualità e design in ogni ambiente della tua casa."
       button:
         enable : true
         label : "Scoprilo"
         link : "#"
         
     # service item loop
-    - title : "È un team di persone esperte e competenti con distribuzioni"
+    - title : "Un servizio vicino a te"
       images:
-      - "images/service-2.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      - "images/servizi-1.webp"
+      content : "Da oltre 30 anni, Electra Frigo è il punto di riferimento a Gonnosfanadiga per chi cerca esperienza, professionalità e attenzione al cliente. Ti seguiamo nella scelta, nell’assistenza e nella consegna, sempre con un sorriso."
       button:
         enable : true
         label : "Scoprilo"
         link : "#"
         
     # service item loop
-    - title : "Un’azienda che si distingue dalle altre"
-      images:
-      - "images/service-3.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      button:
-        enable : true
-        label : "Scoprilo"
-        link : "#"
+    # - title : "Un’azienda che si distingue dalle altre"
+    #   images:
+    #   - "images/service-3.png"
+    #   content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    #   button:
+    #     enable : true
+    #     label : "Scoprilo"
+    #     link : "#"
         
 ################### Screenshot ########################
 screenshot:
