@@ -9,10 +9,10 @@ name = "Blog"
 url = "/blog"
 weight = 2
 
-[[main]]
-name = "Prezzi"
-url = "/pricing"
-weight = 3
+# [[main]]
+# name = "Prezzi"
+# url = "/pricing"
+# weight = 3
 
 [[main]]
 name = "Contatti"
@@ -33,14 +33,14 @@ url = "#"
 name = "Guida Rapida"
 url = "#"
 
-[[footer_left]]
-name = "Prezzi"
-url = "/pricing"
+# [[footer_left]]
+# name = "Prezzi"
+# url = "/pricing"
 
 # menu footer centrale
-[[footer_middle]]
-name = "Prezzi"
-url = "/pricing"
+# [[footer_middle]]
+# name = "Prezzi"
+# url = "/pricing"
 
 [[footer_middle]]
 name = "Piattaforma"
