@@ -46,7 +46,7 @@ service:
       - "images/elettrodomestici-3.webp"
       content : "Dalle cucine alle lavatrici, dai frigoriferi ai piccoli elettrodomestici: selezioniamo solo i marchi più affidabili per offrirti prodotti di qualità, assistenza garantita e prezzi competitivi. Che tu stia arredando una nuova casa o sostituendo un vecchio apparecchio, ti aiutiamo a scegliere quello giusto per te."
       button:
-        enable : true
+        enable : false
         label : "Scoprilo"
         link : "#"
         
@@ -56,7 +56,7 @@ service:
       - "images/casalinghi-1.png"
       content : "Pentole, utensili, accessori per la cucina e la tavola: tutto quello che serve per rendere la tua casa accogliente e funzionale. Un'ampia selezione di articoli scelti con cura, per unire qualità e design in ogni ambiente della tua casa."
       button:
-        enable : true
+        enable : false
         label : "Scoprilo"
         link : "#"
         
@@ -66,7 +66,7 @@ service:
       - "images/servizi-1.webp"
       content : "Da oltre 30 anni, Electra Frigo è il punto di riferimento a Gonnosfanadiga per chi cerca esperienza, professionalità e attenzione al cliente. Ti seguiamo nella scelta, nell’assistenza e nella consegna, sempre con un sorriso."
       button:
-        enable : true
+        enable : false
         label : "Scoprilo"
         link : "#"
         
