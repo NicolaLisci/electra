@@ -82,16 +82,16 @@ service:
         
 ################### Screenshot ########################
 screenshot:
-  enable : true
-  title : "Vivi il miglior <br> flusso di lavoro con noi"
+  enable : false 
+  title : "Passa a trovarci"
   image : "images/screenshot.svg"
 
 ##################### Call to action #####################
 call_to_action:
   enable : true
-  title : "Pronto per iniziare?"
-  image : "images/cta.svg"
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur."
+  title : "Passa a trovarci!"
+  image : "images/vieni-a-trovarci.png"
+  content : "Ti aspettiamo nel nostro negozio, dove potrai vedere da vicino i nostri elettrodomestici e casalinghi, ricevere consigli personalizzati e approfittare delle nostre offerte esclusive."
   button:
     enable : true
     label : "Contattaci"
