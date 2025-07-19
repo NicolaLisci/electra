@@ -1,8 +1,8 @@
 ---
-title: "Chi siamo"
+title: Chi siamo
 layout: chi-siamo
 url: /chi-siamo
-intro: Ecco come tutto è iniziato
+intro: ""
 images:
   - /uploads/electra-team.jpg
 ---
