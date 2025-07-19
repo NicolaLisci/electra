@@ -1,7 +1,7 @@
 ---
-title: "Titolo di chi siamo"
+title: La nostra storia
 url: /chi-siamo
-intro: "Introduzione di chi siamo bla bla"
+intro: Ecco come tutto è iniziato
 images:
   - /uploads/electra-team.jpg
 ---
