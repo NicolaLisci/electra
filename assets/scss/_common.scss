@@ -25,6 +25,23 @@ body::-webkit-scrollbar-thumb {
   background-color: $color-primary;
 }
 
+.blog-scroll-container {
+  scroll-behavior: smooth;
+}
+
+.blog-scroll-container::-webkit-scrollbar {
+  height: 0.8rem;
+}
+
+.blog-scroll-container::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+.blog-scroll-container::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+}
+
+
 img {
   vertical-align: middle;
   border: 0;
