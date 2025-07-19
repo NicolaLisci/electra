@@ -56,13 +56,14 @@
               <ul class="list-inline social-icons">
                 {{ range . }}
                 <li class="list-inline-item">
-                  <a href="{{ .link | safeURL }}" title="{{ .title }}">
+                  <a href="{{ .link | safeURL }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer">
                     <i class="{{ .icon }}"></i>
                   </a>
                 </li>
                 {{ end }}
               </ul>
               {{ end }}
+
             </div>
           </div>
 

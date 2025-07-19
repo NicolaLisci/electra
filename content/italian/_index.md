@@ -103,7 +103,7 @@ banner:
   image: "images/hero-blue.png"
   button:
     enable: true
-    label: "Scarica il volantino"
+    label: "Sfoglia il volantino"
     link: "/uploads/volantino.pdf"
   pdf: "/uploads/volantino.pdf"
 ---

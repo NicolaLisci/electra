@@ -25,13 +25,13 @@ url = "/faq"
 weight = 5
 
 # menu footer sinistro
-[[footer_left]]
-name = "Chi Siamo"
-url = "#"
+# [[footer_left]]
+# name = "Chi Siamo"
+# url = "#"
 
-[[footer_left]]
-name = "Guida Rapida"
-url = "#"
+# [[footer_left]]
+# name = "Guida Rapida"
+# url = "#"
 
 # [[footer_left]]
 # name = "Prezzi"
@@ -42,13 +42,13 @@ url = "#"
 # name = "Prezzi"
 # url = "/pricing"
 
-[[footer_middle]]
-name = "Piattaforma"
-url = "#"
+# [[footer_middle]]
+# name = ""
+# url = "#"
 
-[[footer_middle]]
-name = "Caratteristiche"
-url = "#"
+# [[footer_middle]]
+# name = ""
+# url = "#"
 
 # menu footer destro
 [[footer_right]]

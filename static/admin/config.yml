@@ -32,7 +32,15 @@ collections:
         widget: "file"
       - { label: "Data", name: "date", widget: "datetime" }
 
-
+  - name: "faq"
+    label: "FAQ"
+    folder: "content/italian/faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Domanda", name: "title", widget: "string" }
+      - { label: "Ordine", name: "weight", widget: "number", default: 10 }
+      - { label: "Risposta", name: "body", widget: "markdown" }
 
 
 
