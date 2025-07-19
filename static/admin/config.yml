@@ -42,5 +42,19 @@ collections:
       - { label: "Ordine", name: "weight", widget: "number", default: 10 }
       - { label: "Risposta", name: "body", widget: "markdown" }
 
-
-
+  - name: "chi-siamo"
+    label: "Chi Siamo"
+    files:
+      - file: "content/chi-siamo.md"
+        label: "Chi Siamo"
+        name: "chi-siamo"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string", required: false }
+          - { label: "Introduzione", name: "intro", widget: "text", required: false }
+          - { label: "Contenuto", name: "content", widget: "markdown" }
+          - label: "Immagini"
+            name: "images"
+            widget: "list"
+            field:
+              { label: "URL immagine", name: "image", widget: "image" }

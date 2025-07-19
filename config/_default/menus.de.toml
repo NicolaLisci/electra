@@ -9,10 +9,10 @@ name = "Blog"
 url = "/blog"
 weight = 2
 
-# [[main]]
-# name = "Pricing"
-# url = "/pricing"
-# weight = 3
+[[main]]
+name = "Wer wir sind"
+url = "/chi-siamo"
+weight = 3
 
 [[main]]
 name = "Contact"
@@ -39,9 +39,9 @@ weight = 5
 
 
 # footer menu middle
-# [[footer_middle]]
-# name = "Pricing"
-# url = "/pricing"
+[[footer_middle]]
+name = "Chi siamo"
+url = "/chi-siamo"
 
 # [[footer_middle]]
 # name = "Platform"

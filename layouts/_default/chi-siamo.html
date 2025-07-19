@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+<section class="section my-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        {{ with .Params.intro }}
+        <p class="lead mb-4">{{ . | markdownify }}</p>
+        {{ end }}
+
+        {{ with .Params.images }}
+        <div class="row gy-4">
+          {{ range . }}
+          <div class="col-md-6">
+            <img src="{{ . }}" alt="Chi siamo image" class="img-fluid rounded shadow">
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with .Params.content }}
+        <div class="mt-4">
+          {{ . | markdownify }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
