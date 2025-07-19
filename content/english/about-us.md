@@ -1,6 +1,5 @@
 ---
-title: "Titolo di chi siamo"
-url: /chi-siamo
+title: "About Us"
 intro: "Introduzione di chi siamo bla bla"
 images:
   - /uploads/electra-team.jpg

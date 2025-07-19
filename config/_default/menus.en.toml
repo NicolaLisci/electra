@@ -10,8 +10,8 @@ url = "/blog"
 weight = 2
 
 [[main]]
-name = "About us"
-url = "/chi-siamo"
+name = "About Us"
+url = "/about-us"
 weight = 3
 
 [[main]]
@@ -40,8 +40,8 @@ weight = 5
 
 # footer menu middle
 [[footer_middle]]
-name = "Chi siamo"
-url = "/chi-siamo"
+name = "About Us"
+url = "/about-us"
 
 # [[footer_middle]]
 # name = "Platform"
