@@ -6,8 +6,8 @@ contentDir = "content/italian"
 weight = 1
 
 [it.params]
-footer_menu_left = "Azienda"
-footer_menu_middle = ""
+footer_menu_left = ""
+footer_menu_middle = "Azienda"
 footer_menu_right = "Supporto"
 footer_content = ""
 
@@ -18,8 +18,8 @@ languageCode = "en-US"
 contentDir = "content/english"
 weight = 2
 [en.params]
-footer_menu_left = "Company"
-footer_menu_middle = ""
+footer_menu_left = ""
+footer_menu_middle = "Company"
 footer_menu_right = "Support"
 footer_content = ""
 
@@ -30,8 +30,8 @@ languageCode = "de-DE"
 contentDir = "content/deutsch"
 weight = 3
 [de.params]
-footer_menu_left = "Firma"
-footer_menu_middle = ""
+footer_menu_left = ""
+footer_menu_middle = "Firma"
 footer_menu_right = "Support"
 footer_content = ""
 

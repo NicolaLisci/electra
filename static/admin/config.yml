@@ -7,18 +7,18 @@ public_folder: "/uploads"
 
 collections:
   - name: "blog"
-  label: "Blog"
-  folder: "content/italian/blog"
-  create: true
-  slug: "{{slug}}"
-  fields:
-    - { label: "Titolo", name: "title", widget: "string" }
-    - { label: "Descrizione", name: "description", widget: "string" }
-    - { label: "Data", name: "date", widget: "datetime" }
-    - { label: "Immagine in evidenza", name: "image", widget: "image" }
-    - { label: "Contenuto", name: "body", widget: "markdown" }
+    label: "Blog"
+    folder: "content/italian/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Descrizione", name: "description", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Immagine in evidenza", name: "image", widget: "image" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
 
-    - name: "volantini"
+  - name: "volantini"
     label: "Volantini"
     folder: "content/volantini"
     create: true
@@ -28,33 +28,33 @@ collections:
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - label: "PDF"
-      name: "pdf"
-      widget: "file"
+        name: "pdf"
+        widget: "file"
       - { label: "Data", name: "date", widget: "datetime" }
 
-      - name: "faq"
-      label: "FAQ"
-      folder: "content/italian/faq"
-      create: true
-      slug: "{{slug}}"
-      fields:
-        - { label: "Domanda", name: "question", widget: "string" }
-        - { label: "Ordine", name: "weight", widget: "number", default: 10 }
-        - { label: "Risposta", name: "body", widget: "markdown" }
+  - name: "faq"
+    label: "FAQ"
+    folder: "content/italian/faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Domanda", name: "question", widget: "string" }
+      - { label: "Ordine", name: "weight", widget: "number", default: 10 }
+      - { label: "Risposta", name: "body", widget: "markdown" }
 
-        - name: "chi-siamo"
+  - name: "chi-siamo"
+    label: "Chi Siamo"
+    files:
+      - file: "content/italian/chi-siamo.md"
         label: "Chi Siamo"
-        files:
-          - file: "content/italian/chi-siamo.md"
-          label: "Chi Siamo"
-          name: "chi-siamo"
-          fields:
-            - { label: "Titolo", name: "title", widget: "string" }
-            - { label: "URL", name: "url", widget: "string", required: false }
-            - { label: "Introduzione", name: "intro", widget: "text", required: false }
-            - label: "Immagini"
+        name: "chi-siamo"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string", required: false }
+          - { label: "Introduzione", name: "intro", widget: "text", required: false }
+          - label: "Immagini"
             name: "images"
             widget: "list"
             field:
               { label: "URL immagine", name: "image", widget: "image" }
-              - { label: "Contenuto", name: "body", widget: "markdown" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
