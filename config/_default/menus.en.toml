@@ -10,7 +10,7 @@ url = "/blog"
 weight = 2
 
 [[main]]
-name = "who we are"
+name = "About us"
 url = "/chi-siamo"
 weight = 3
 

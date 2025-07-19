@@ -6,14 +6,15 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
+
         {{ with .Params.intro }}
-        <p class="lead mb-4">{{ . | markdownify }}</p>
+        <p class="lead mb-4">{{ . }}</p>
         {{ end }}
 
         {{ with .Params.images }}
-        <div class="row gy-4">
+        <div class="row justify-content-center gy-4">
           {{ range . }}
-          <div class="col-md-6">
+          <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-center">
             <img src="{{ . }}" alt="Chi siamo image" class="img-fluid rounded shadow">
           </div>
           {{ end }}
@@ -23,6 +24,7 @@
         <div class="mt-4">
           {{ .Content }}
         </div>
+
       </div>
     </div>
   </div>

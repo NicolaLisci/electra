@@ -1,6 +1,5 @@
 ---
 title: "Titolo di chi siamo"
-layout: chi-siamo
 url: /chi-siamo
 intro: "Introduzione di chi siamo bla bla"
 images:
