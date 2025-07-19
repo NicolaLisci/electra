@@ -1,5 +1,5 @@
 ---
-title: Prova Faqs
+question: Prova Faqs
 weight: 10
 ---
 Ecco la **risposta** delle *FAQs*

@@ -38,7 +38,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Domanda", name: "title", widget: "string" }
+      - { label: "Domanda", name: "question", widget: "string" }
       - { label: "Ordine", name: "weight", widget: "number", default: 10 }
       - { label: "Risposta", name: "body", widget: "markdown" }
 
