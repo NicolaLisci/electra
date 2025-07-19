@@ -57,3 +57,19 @@ collections:
             field:
               { label: "URL immagine", name: "image", widget: "image" }
           - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "about-us"
+    label: "About Us"
+    files:
+      - file: "content/english/about-us.md"
+        label: "About Us"
+        name: "about-us"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Introduzione", name: "intro", widget: "text", required: false }
+          - label: "Immagini"
+            name: "images"
+            widget: "list"
+            field:
+              { label: "URL immagine", name: "image", widget: "image" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
