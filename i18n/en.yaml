@@ -21,3 +21,6 @@
 
 - id: where_are_we
   translation: Where to find us
+
+- id: latest_articles
+  translation: Latest Articles

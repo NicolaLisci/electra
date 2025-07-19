@@ -21,3 +21,6 @@
 
 - id: where_are_we
   translation: Dove ci trovi
+
+- id: latest_articles
+  translation: Ultimi Articoli
