@@ -45,7 +45,7 @@ collections:
   - name: "chi-siamo"
     label: "Chi Siamo"
     files:
-      - file: "content/chi-siamo.md"
+      - file: "content/italian/chi-siamo.md"
         label: "Chi Siamo"
         name: "chi-siamo"
         fields:
