@@ -27,7 +27,7 @@ google_tag_manager = "" # example: G-XXXXXXXXXX
 custom_script = ""
 # copyright
 theme_copyright = true
-copyright = "Copyright by your company"
+copyright = "Copyright by Electra frigo"
 
 # preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -38,7 +38,7 @@ preloader = "" # use jpg, png, svg or gif format. example - "images/preloader.gi
 # Navigation buttons
 [navigation_button]
 enable = true
-label = "Sfoglia il volantino"
+label = "Contattaci"
 link = "contact"
 
 
@@ -102,24 +102,9 @@ button = "I Accept"
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
-
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+link = "https://www.facebook.com/socElectra/?locale=it_IT#"
 
 [[social]]
 title = "instagram"
 icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
-
-[[social]]
-title = "github"
-icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
-
-[[social]]
-title = "linkedin"
-icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+link = "https://www.instagram.com/electra.frigo?igsh=MWtsdXJweHF2N2w1Yw=="

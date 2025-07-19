@@ -4,9 +4,10 @@ languageName = "IT"
 languageCode = "it-IT"
 contentDir = "content/italian"
 weight = 1
+
 [it.params]
 footer_menu_left = "Azienda"
-footer_menu_middle = "Prodotti"
+footer_menu_middle = ""
 footer_menu_right = "Supporto"
 footer_content = ""
 
@@ -18,7 +19,7 @@ contentDir = "content/english"
 weight = 2
 [en.params]
 footer_menu_left = "Company"
-footer_menu_middle = "Products"
+footer_menu_middle = ""
 footer_menu_right = "Support"
 footer_content = ""
 
@@ -30,7 +31,7 @@ contentDir = "content/deutsch"
 weight = 3
 [de.params]
 footer_menu_left = "Firma"
-footer_menu_middle = "Produkte"
+footer_menu_middle = ""
 footer_menu_right = "Support"
 footer_content = ""
 
