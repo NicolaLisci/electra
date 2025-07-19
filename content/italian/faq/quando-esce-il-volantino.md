@@ -1,5 +1,6 @@
 ---
-title: Quando esce il volantino?
 weight: 1
+question: "Bella domanda?"
 ---
+
 Esce ogni mese

@@ -1,18 +1,19 @@
 {{ define "main" }}
-  {{ partial "page-header.html" . }}
+{{ partial "page-header.html" . }}
 
-  <section class="section">
-    <div class="container">
-      <div class="row faq-list">
-        {{ range sort .Pages "Params.weight" }}
-          <div class="faq-item col-12 mb-4">
-            <h3 class="faq-question">{{ .Title }}</h3>
-            <div class="faq-answer">
-              {{ .Content }}
-            </div>
-          </div>
-        {{ end }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ range sort .Pages "Params.weight" }}
+      <div class="col-md-6 mb-4">
+        <div class="p-5 shadow rounded-lg">
+          <h3 class="mb-4 check-mark">{{ .Params.question | markdownify }}</h3>
+          <p>{{ .Content | markdownify }}</p>
+        </div>
       </div>
+      {{ end }}
     </div>
-  </section>
+  </div>
+</section>
+
 {{ end }}
