@@ -1,14 +1,18 @@
 {{ define "main" }}
-{{ partial "page-header.html" . }}
+  {{ partial "page-header.html" . }}
 
-{{ "<!-- faq -->" | safeHTML }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      {{ .Content }}
+  <section class="section">
+    <div class="container">
+      <div class="row faq-list">
+        {{ range sort .Pages "Params.weight" }}
+          <div class="faq-item col-12 mb-4">
+            <h3 class="faq-question">{{ .Title }}</h3>
+            <div class="faq-answer">
+              {{ .Content }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
     </div>
-  </div>
-</section>
-{{ "<!-- /faq -->" | safeHTML }}
-
+  </section>
 {{ end }}
